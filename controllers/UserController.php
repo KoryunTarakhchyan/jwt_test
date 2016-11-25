@@ -115,10 +115,6 @@ class UserController extends \yii\web\Controller
 
         $user = New User();
 
-//        print_r('<pre>');
-//        print_r(getallheaders());
-//        print_r();
-
         foreach (getallheaders() as $name => $value) {
 
             if ($name == 'token'  ) {
